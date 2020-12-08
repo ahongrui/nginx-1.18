@@ -2,8 +2,6 @@
 #include <ngx_config.h>
 #include <ngx_core.h>
 
-
-extern ngx_module_t  ngx_http_my_test_module;
 extern ngx_module_t  ngx_core_module;
 extern ngx_module_t  ngx_errlog_module;
 extern ngx_module_t  ngx_conf_module;
@@ -95,7 +93,7 @@ ngx_module_t *ngx_modules[] = {
     &ngx_http_upstream_random_module,
     &ngx_http_upstream_keepalive_module,
     &ngx_http_upstream_zone_module,
-	&ngx_http_my_test_module,
+
     &ngx_http_write_filter_module,
     &ngx_http_header_filter_module,
     &ngx_http_chunked_filter_module,
